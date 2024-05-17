@@ -1,0 +1,187 @@
+
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    font-family: "lucida Console", monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: lightgray;
+
+}
+
+.dropdown-menu {
+    background-color: whitesmoke;
+
+}
+
+.dropdown-toggle {
+    background-color: lightgrey !important;
+    border: 0;
+    font-family: "lucida Console", monospace;
+    font-size: 20px;
+}
+
+
+.dropdown {
+    margin-right: 100px;
+    display: flex; 
+}
+
+.dropdown a,
+.dropdown-toggle {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-toggle:hover,
+.dropdown a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+ul.dropdown-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(taustaburger.png);
+    background-attachment: fixed;  
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.spacer {
+    height: 130px;
+}
+
+.teksti {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+.menu-teksti {
+    background-color: #f1f1f1;
+    width: 50%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "lucinda Console", monospace;
+    line-height: 2;
+    font-size: 20px;
+    margin-top: 1000px;
+}
+
+.menu-teksti h2 {
+    text-decoration: underline;
+}
+
+.menu-teksti dd {
+    font-size: 15px;
+}
+
+.index-teksti {
+    background-color: #f1f1f1;
+    width: 40%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "lucinda Console", monospace;
+    margin-top: 70px;
+    z-index: 0;
+}
+
+
+footer {
+    font-family: "lucinda Console", monospace;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightgray;
+    padding: 10px;
+    
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.osoite-aukiolo {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.social-media {
+    
+    margin-right: 40px;
+}
+
+.social-media a {
+    margin-right: 30px;
+}
+
+.contact-teksti, .contact-kuva {
+    background-color: #f1f1f1;
+    width: 40%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "lucinda Console", monospace;
+    margin-top: 10px;
+    z-index: 0;
+}
+
+.contact-kuva {
+    margin-top: 70px;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-primary {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .index-teksti, .contact-kuva, .contact-teksti, .menu-teksti, .teksti  {
+        width: 100%;
+        height: auto; }}
