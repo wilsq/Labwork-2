@@ -1,7 +1,5 @@
 
 
-
-
 .header {
     position: fixed;
     top: 0;
@@ -12,8 +10,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
     background-color: lightgray;
+    z-index: 1;
 
 }
 
@@ -68,34 +67,33 @@ ul.dropdown-menu {
 
 html, body {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 body {
     background-image: url(taustaburger.png);
     background-attachment: fixed;  
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     padding-bottom: 60px;
 }
 
 .spacer {
-    height: 130px;
+    height: 80px;
 }
 
 .teksti {
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
     
     
 }
 
 .menu-teksti {
     background-color: #f1f1f1;
-    width: 50%; 
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -103,7 +101,8 @@ body {
     font-family: "lucinda Console", monospace;
     line-height: 2;
     font-size: 20px;
-    margin-top: 1000px;
+    margin-top: 100px;
+    margin-bottom: 130px;
 }
 
 .menu-teksti h2 {
@@ -122,8 +121,9 @@ body {
     border-radius: 5px;
     text-align: center;
     font-family: "lucinda Console", monospace;
-    margin-top: 70px;
-    z-index: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
 
 
@@ -171,8 +171,12 @@ footer {
     z-index: 0;
 }
 
+.contact-teksti {
+    margin-bottom: 80px;
+}
+
 .contact-kuva {
-    margin-top: 70px;
+    margin-top: 110px;
     max-width: 100%;
     height: auto;
 }
