@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Scripting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="heading">Heading</h1>
+    <h2 class="yellow-text">Heading 2</h2>
+    <h2 class="blue-text">Another heading 2</h2>
+
+    <p class="blue-text">Teksti</p>
+
+    <div class="square"></div>
+
+    <script>
+      let heading = document.getElementById("heading");
+      heading.innerHTML = "New heading";
+
+      document.body.style.backgroundColor = "lightgray";
+      let h2 = document.querySelector("h2");
+      h2.style.display = "none";
+
+      let item = document.getElementsByClassName("square");
+      let y = item[0];
+    </script>
+  </body>
+</html>
